@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/Intro.module.css'
-
+import Image from 'next/image'
 const Intro = () => {
   return (
     <div className={styles.container}>
@@ -16,7 +16,14 @@ const Intro = () => {
           </p>
           <button className={styles.button}>Ver Todos Las Jollas </button>
       </div>
-      <div className={styles.card}>second</div>
+      <div className={styles.card}>
+          <Image  src='/img/home.jpeg' 
+          width='100%'
+           height='100%' 
+           layout='fill'
+           objectFit='cover'
+            alt='i'/>
+      </div>
     </div>
   )
 }
