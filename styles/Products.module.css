@@ -1,4 +1,36 @@
 .container {
-    border: 1px solid ;
+   padding: 0 100px;
+
     
+}
+.name{
+    font-size:50px;
+    border-bottom: 4px solid  rgb(228, 189, 117);
+    color :rgb(233,224,208);
+    width: max-content;
+}
+.subtitle{
+    font-size:50x;
+    color: rgb(223, 197, 149);
+}
+.products{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 800px ;
+    height:800px ;
+    object-fit: cover;
+    
+}
+.mediaContainer{
+    width: 85%;
+    height: 85%;
+    border-radius:85%;
+    overflow: hidden;
 }

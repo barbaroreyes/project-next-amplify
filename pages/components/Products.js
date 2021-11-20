@@ -8,7 +8,7 @@ const Products = ({products}) => {
   return (
     <div className={styles.container}>
       Products
-        <h1 className={styles.title}>Todo Por agradar</h1>
+        <h1 className={styles.name}>Todo Por agradar</h1>
         <h1 className={styles.subtitle}>Hoy es Tu dia </h1>
         <div className={styles.products}>
        {products.map((product,i )=> (
@@ -27,8 +27,10 @@ const Products = ({products}) => {
                  />
                ):(
                  <Image 
-                 src={`/public/img/${product.photo}`} 
-                 layout='fill'
+                 src={`/img/${product.photo}`} 
+                width='100%'
+                height='100%'
+                 layout='responsive'
                 objectFit='cover'
                  alt='new'/>
                )}
