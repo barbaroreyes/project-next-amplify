@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from '../styles/Intro.module.css'
 import Image from 'next/image'
+import Circle from '../pages/components/Circle'
 const Intro = () => {
   return (
     <div className={styles.container}>
+      <Circle backgroundColor='#DFC595' top='-50vh' left='-50vh'/>
       <div className={styles.card}>
           <h1 className={styles.title}>
              <span className={styles.brand}>
@@ -18,8 +20,6 @@ const Intro = () => {
       </div>
       <div className={styles.card}>
           <Image  src='/img/home.jpeg' 
-          width='100%'
-           height='100%' 
            layout='fill'
            objectFit='cover'
             alt='i'/>
